@@ -6,6 +6,7 @@ Release:	1
 License:	BSD
 Group:		Networking	
 Source0:	http://monkey.org/~provos/%{name}-%{version}.tar.gz
+Patch0:		%{name}-ac_fixes.patch
 URL:		http://monkey.org/~provos/scanssh/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -23,15 +24,17 @@ w postaci listy.
 
 %prep
 %setup -q -n scanssh
+%patch0 -p1
 
 %build
-%configure2_13
+aclocal
+%{__autoconf}
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
