@@ -1,11 +1,11 @@
 --- scanssh/configure.in~	Sat Aug 10 10:58:49 2002
 +++ scanssh/configure.in	Sat Aug 10 10:58:49 2002
-@@ -14,21 +14,23 @@
+@@ -14,19 +14,19 @@
  
  dnl XXX - Solaris sux.
  AC_CHECK_LIB(socket, socket)
 -AC_CHECK_LIB(nsl, gethostbyname)
-+AC_CHECK_FUNC(gethostbyname, [], AC_CHECK_LIB(nsl, gethostbyname))
++AC_CHECK_FUNC(gethostbyname, [], [AC_CHECK_LIB(nsl, gethostbyname)])
  
  dnl Checks for libraries.
  AC_REPLACE_FUNCS(inet_aton inet_pton strsep getaddrinfo getnameinfo strlcpy strlcat arc4random)
@@ -24,11 +24,7 @@
 +   AC_LIBOBJ(err)
  fi
  
-+AC_SUBST(AC_LIBOBJ)
-+
  dnl Checks for libpcap
- AC_MSG_CHECKING(for libpcap)
- AC_ARG_WITH(libpcap,
 --- scanssh/Makefile.in~	Sat Aug 10 10:59:48 2002
 +++ scanssh/Makefile.in	Sat Aug 10 10:59:48 2002
 @@ -35,6 +35,7 @@
