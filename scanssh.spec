@@ -2,14 +2,14 @@ Summary:	SSH Version Scanner
 Summary(pl):	Skaner Wersji SSH
 Name:		scanssh
 Version:	1.6b
-Release:	1
+Release:	2
 License:	BSD
 Group:		Networking
 Source0:	http://monkey.org/~provos/%{name}-%{version}.tar.gz
 # Source0-md5:	b0b7a4e6953a878b188156449ae0750f
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://monkey.org/~provos/scanssh/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	libpcap-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,7 +37,8 @@ w postaci listy.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
