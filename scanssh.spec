@@ -10,6 +10,7 @@ Patch0:		%{name}-ac_fixes.patch
 URL:		http://monkey.org/~provos/scanssh/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libpcap-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
