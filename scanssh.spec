@@ -4,7 +4,7 @@ Name:		scanssh
 Version:	1.6b
 Release:	1
 License:	BSD
-Group:		Networking	
+Group:		Networking
 Source0:	http://monkey.org/~provos/%{name}-%{version}.tar.gz
 # Source0-md5:	b0b7a4e6953a878b188156449ae0750f
 Patch0:		%{name}-ac_fixes.patch
