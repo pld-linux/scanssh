@@ -20,7 +20,7 @@ servers. It will query their version number and displays the results
 in a list.
 
 %description -l pl
-Scanssh przeszukuje podane adres i sieci w poszukiwaniu uruchomionych
+Scanssh przeszukuje podane adresy i sieci w poszukiwaniu uruchomionych
 serwerów SSH, po czym odpytuje siê je o ich wersjê i wy¶wietla wyniki
 w postaci listy.
 
