@@ -1,5 +1,5 @@
 Summary:	SSH Version Scanner
-Summary(pl.UTF-8):   Skaner Wersji SSH
+Summary(pl.UTF-8):	Skaner Wersji SSH
 Name:		scanssh
 Version:	1.6b
 Release:	2
