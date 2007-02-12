@@ -1,5 +1,5 @@
 Summary:	SSH Version Scanner
-Summary(pl):	Skaner Wersji SSH
+Summary(pl.UTF-8):   Skaner Wersji SSH
 Name:		scanssh
 Version:	1.6b
 Release:	2
@@ -19,9 +19,9 @@ Scanssh scans the given addresses and networks for running SSH
 servers. It will query their version number and displays the results
 in a list.
 
-%description -l pl
+%description -l pl.UTF-8
 Scanssh przeszukuje podane adresy i sieci w poszukiwaniu uruchomionych
-serwerów SSH, po czym odpytuje siê je o ich wersjê i wy¶wietla wyniki
+serwerÃ³w SSH, po czym odpytuje siÄ™ je o ich wersjÄ™ i wyÅ›wietla wyniki
 w postaci listy.
 
 %prep
