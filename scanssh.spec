@@ -1,17 +1,19 @@
 Summary:	SSH Version Scanner
 Summary(pl.UTF-8):	Skaner Wersji SSH
 Name:		scanssh
-Version:	1.6b
-Release:	2
+Version:	2.1
+Release:	1
 License:	BSD
 Group:		Networking
 Source0:	http://monkey.org/~provos/%{name}-%{version}.tar.gz
-# Source0-md5:	b0b7a4e6953a878b188156449ae0750f
+# Source0-md5:	9fab4253b56b2d15367d4872b370cdcb
 Patch0:		%{name}-ac_fixes.patch
 URL:		http://monkey.org/~provos/scanssh/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
 BuildRequires:	libpcap-devel
+BuildRequires:  libdnet-devel
+BuildRequires:  libevent-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +27,7 @@ serwerów SSH, po czym odpytuje się je o ich wersję i wyświetla wyniki
 w postaci listy.
 
 %prep
-%setup -q -n scanssh
+%setup -q
 %patch0 -p1
 
 %build
