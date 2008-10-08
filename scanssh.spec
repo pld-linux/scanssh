@@ -11,9 +11,9 @@ Patch0:		%{name}-ac_fixes.patch
 URL:		http://monkey.org/~provos/scanssh/
 BuildRequires:	autoconf >= 2.53
 BuildRequires:	automake
+BuildRequires:	libdnet-devel
+BuildRequires:	libevent-devel
 BuildRequires:	libpcap-devel
-BuildRequires:  libdnet-devel
-BuildRequires:  libevent-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
