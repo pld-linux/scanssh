@@ -2,7 +2,7 @@ Summary:	SSH Version Scanner
 Summary(pl.UTF-8):	Skaner Wersji SSH
 Name:		scanssh
 Version:	2.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Networking
 Source0:	http://monkey.org/~provos/%{name}-%{version}.tar.gz
